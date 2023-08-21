@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .board {
+            width: 35%;
+            height: 70vh;
+            background: #000;
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .boarder {
+            background: #fff;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            font-weight: 800;
+        }
+        .boarder:hover {
+            background-color: rgba(255, 254, 254, 0.919);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="board">
+            <div class="boarder" id="item1" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item2" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item3" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item4" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item5" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item6" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item7" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item8" onclick="playGame(this.id)"></div>
+            <div class="boarder" id="item9" onclick="playGame(this.id)"></div>
+        </div>
+        <p id="win">X O Game</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
